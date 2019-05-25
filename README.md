@@ -11,3 +11,6 @@
 ## day3 学习css语法和选择器
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day3/index.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day3)
+## day4 学习背景设置和更复杂的选择器
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day4/index.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day4)

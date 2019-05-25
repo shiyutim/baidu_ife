@@ -18,3 +18,5 @@ rem等于HTML中根元素的大小。
 13.data-* 属性被称为数据属性，提供了自定义数据的方法。
 自身的不足：有些选择器较少使用，不够灵活。有些不常用的属性了解较少。
 
+我的github代码和笔记地址： https://github.com/shiyutim/baidu_ife/tree/master/day3
+
