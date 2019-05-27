@@ -15,5 +15,5 @@
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day4/index.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day4)
 ## day5andday6 学习布局
-* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day5andday6/resume.html)
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day5andday6/html/resume.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day5andday6)
