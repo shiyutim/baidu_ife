@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+p {
+    margin-top: 25px;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.title_small {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+.strong {
+    font-weight: 700;
+}
+.distance {
+    margin-left: 30px;
+}
