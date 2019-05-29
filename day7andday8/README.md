@@ -36,4 +36,7 @@
     * `flex-end`,使`flex`项在交叉轴的结尾处对齐所有的值。
 
 5.圣杯布局和双飞翼布局都是使用`CSS`的`margin负值`把两边固定宽度的div放到上面来的。
+>The future's not set, there's no fate but what we make for ourselves.
+>>未来是个未知数，没有什么是命中注定的，未来掌握在我们自己的手中。
+>>>《终结者2：审判日》
   
