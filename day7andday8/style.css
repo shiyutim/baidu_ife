@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部区域样式 */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+.header {
+    width: 960px;
+    height: 100px;
+    line-height: 80px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.header_left {
+    float: left;
+}
+
+.header_right {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+header span>a {
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* 头部样式结束 */
+
+
+/* banner样式 */
+section {
+    height: 250px;
+    width: 100%;
+    background-color: rgb(102, 187, 51);
+    position: relative;
+}
+
+section ul {
+    position: absolute;
+    right: 280px;
+    bottom: 5px;
+}
+
+section li {
+    list-style-type: none;
+    display: inline-block;
+    height: 27px;
+    width: 22px;
+    line-height: 27px;
+    text-align: center;
+    background-color: rgb(167, 196, 146);
+    border: 1px solid #000;
+    margin-right: 3px;
+}
+
+/* 当前轮播图样式 */
+.section_current {
+    padding-top: 13px;
+    background-color: #fff;
+}
+
+/* banner样式结束 */
+
+/* 主导航开始 */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+
+    position: relative;
+}
+
+.menu {
+    width: 960px;
+    height: 70px;
+    margin: 0 auto;
+
+}
+.menu>p {
+    position: absolute;
+    bottom: 0;
+}
+
+.menu span {
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    background-color: rgb(233, 224, 224);
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(218, 212, 212);
+
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+
+
+
+.menu .menu_current {
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    background-color: #fff;
+    border: 1px solid rgb(218, 212, 212);
+    border-bottom: #fff;
+}
+
+.line_left {
+    height: 1px;
+    width: calc((100% - 960px) / 2);
+    background-color: rgb(218, 212, 212);
+    float: left;
+}
+.line_right {
+    height: 1px;
+    width: calc(100% - (100% - 960px) / 2 - 100px);
+    background-color: rgb(218, 212, 212);
+    float: right;
+}
+
+/* 主导航结束 */
+
+/* 主内容 */
+main {
+    padding-top: 10px;
+}
+.content {
+    width: 960px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    border: 1px solid #999;
+    padding: 80px;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+/* 主内容区域结束 */
+
+/* 底部 */
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.content1,
+.content2 {
+    padding: 90px 100px;
+}
+.content3 {
+    padding: 90px 95px;
+}
+.content8,
+.content9,
+.content10 {
+    padding: 90px 115px;
+}

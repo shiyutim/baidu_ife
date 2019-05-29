@@ -14,6 +14,9 @@
 ## day4 学习背景设置和更复杂的选择器
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day4/index.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day4)
-## day5andday6 学习布局
+## day5 and day6 学习盒模型和float
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day5andday6/html/resume.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day5andday6)
+## day7 and day8 学习布局
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day7andday8/index.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day7andday8)
