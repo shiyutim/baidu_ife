@@ -20,3 +20,6 @@
 ## day7 and day8 学习布局
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day7andday8/index.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day7andday8)
+## day9 day10 and day11 做一个网站
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day9day10and11/index.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day9day10andday11)
