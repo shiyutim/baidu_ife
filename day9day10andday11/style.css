@@ -177,6 +177,7 @@
     width: 100%;
     background-color: #fff;
     padding-bottom: 80px;
+    border-bottom: 1px solid #999;
 }
 
 .information2 {   /* 把三个盒子包裹起来 */
@@ -208,4 +209,239 @@
 }
 .item4_box:nth-child(2) {
     margin-right: 90px;
+}
+
+/* 第五部分 */
+.item5 {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    padding-bottom: 100px;
+}
+.item5_box1 {
+    padding-top: 115px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.item5_box1 > img {
+    margin-right: 95px;
+}
+.item5_box1_info {
+    width: 35%;
+    color: #000;
+    display: inline-block;
+}
+.item5_box1_info h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-bottom: 35px;
+}
+.item5_box1_info > p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.315);
+}
+
+.item5_box2 {
+    padding-top: 115px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.item5_box2 > img {
+    margin-left: 95px;
+}
+.item5_box2_info {
+    width: 35%;
+    color: #000;
+    display: inline-block;
+}
+.item5_box2_info h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-bottom: 35px;
+}
+.item5_box2_info > p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.315);
+}
+
+/* 第六部分 */
+.item6 {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+}
+.item6_info {
+    width: 46%;
+    margin: 90px auto 60px;
+    text-align: center;
+}
+.item6_info h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.item6_info p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.315);
+}
+
+
+.photo {
+    width: 65%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.photo_item1_img:hover {
+    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+
+
+
+
+.photo img {
+    margin-bottom: 30px;
+}
+
+.photo_hover {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    transform: translateY(180px);
+}
+
+/* .photo_item1_img:hover .photo_hover p {
+    transform: translateY(15px);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 第七部分 */
+.item7 {
+    width: 100%;
+    padding-top: 70px;
+    text-align: center;
+}
+.item7_box1 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 125px;
+    margin-bottom: 70px;
+}
+.item7_box1 h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 45px auto;
+    text-align: center;
+}
+.item7_box1 input {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.item7_box1 textarea {
+    display: block;
+    width: 80%;
+    height: 140px;
+    margin: auto;
+    padding: 20px 0 0 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #7c7575;
+}
+.item7_box1 input[type="button"] {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 85%;
+}
+
+.item7_box1,
+.item7_box2 {
+    display: inline-block;
+}
+
+.item7_box2 {
+    width: 24%;
+    text-align: left;
+}
+.item7_box2 h1 {
+    font-size: 42px;
+    font-weight: 300;
+}
+.item7_box2_txt {
+    font-size: 16px;
+    color: #7c7575;
+    margin-top: 35px;
+}
+.time {
+    display: block;
+}
+
+.item7_box2_info_box {
+    margin-bottom: 40px; 
+}
+.item7_box2_info_box:nth-child(1) {
+    margin-top: 65px;
+}
+
+.item7_box2_info_box div {
+    display: inline-block;
+}
+.item7_box2_info_box span {
+    margin-left: 15px;
+}
+
+
+/* 第八部分 */
+.item8 {
+    width: 100%;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item8_box {
+    margin: 85px auto 120px;
+    font-size: 16px;
+}
+.item8_box a {
+    color: #fff;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.301);
+    font-weight: 300;
+}
+.item8_box a:hover {
+    text-decoration: underline;
+}
+.item8_box li {
+    margin-bottom: 32px;
+    list-style-type: none;
+}
+.item8_box .now {
+    color: #fff;
+    font-size: 14px;
 }
