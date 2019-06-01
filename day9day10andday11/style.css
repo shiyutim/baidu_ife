@@ -180,7 +180,8 @@
     border-bottom: 1px solid #999;
 }
 
-.information2 {   /* 把三个盒子包裹起来 */
+.information2 {
+    /* 把三个盒子包裹起来 */
     display: flex;
     justify-content: space-between;
     margin: auto 300px;
@@ -203,10 +204,12 @@
 .item4>p {
     font-size: 16px;
 }
+
 /* 设置前面两个盒子右边距 */
 .item4_box:nth-child(1) {
     margin-right: 90px;
 }
+
 .item4_box:nth-child(2) {
     margin-right: 90px;
 }
@@ -217,27 +220,32 @@
     border-bottom: 1px solid #999;
     padding-bottom: 100px;
 }
+
 .item5_box1 {
     padding-top: 115px;
     width: 70%;
     margin: auto;
     display: flex;
 }
-.item5_box1 > img {
+
+.item5_box1>img {
     margin-right: 95px;
 }
+
 .item5_box1_info {
     width: 35%;
     color: #000;
     display: inline-block;
 }
+
 .item5_box1_info h1 {
     font-size: 20px;
     font-weight: 600;
     margin-top: 20%;
     margin-bottom: 35px;
 }
-.item5_box1_info > p {
+
+.item5_box1_info>p {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.315);
 }
@@ -248,21 +256,25 @@
     margin: auto;
     display: flex;
 }
-.item5_box2 > img {
+
+.item5_box2>img {
     margin-left: 95px;
 }
+
 .item5_box2_info {
     width: 35%;
     color: #000;
     display: inline-block;
 }
+
 .item5_box2_info h1 {
     font-size: 20px;
     font-weight: 600;
     margin-top: 20%;
     margin-bottom: 35px;
 }
-.item5_box2_info > p {
+
+.item5_box2_info>p {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.315);
 }
@@ -273,16 +285,19 @@
     background-color: #fff;
     border-bottom: 1px solid #999;
 }
+
 .item6_info {
     width: 46%;
     margin: 90px auto 60px;
     text-align: center;
 }
+
 .item6_info h1 {
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 30px;
 }
+
 .item6_info p {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.315);
@@ -297,32 +312,177 @@
     justify-content: space-around;
     position: relative;
 }
-.photo_item1_img:hover {
-    opacity: .5;
-    background-color: rgba(0, 0, 0, 0.664);
-}
-
-
-
 
 
 .photo img {
     margin-bottom: 30px;
 }
 
-.photo_hover {
-    position: absolute;
-    background-color: #000;
-    color: #fff;
-    transform: translateY(180px);
+
+/* 第一张图片hover */
+.photo_item1_img1:hover {
+    cursor: pointer;
 }
 
-/* .photo_item1_img:hover .photo_hover p {
-    transform: translateY(15px);
-} */
+
+.photo_item1::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    height: 0;
+    width: 470px;
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+
+.photo_item1:hover::before {
+    content: "Ethan Dutton";
+    height: 340px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.photo_item1::after {
+    content: "";
+    position: absolute;
+    left: 170px;
+    top: 120px;
+    height: 0;
+    width: 470px;
+}
+
+.photo_item1:hover::after {
+    content: "SENIOR VISUAL DESIGNER";
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.432);
+}
 
 
 
+
+/* 第二张图片hover */
+.photo_item1_img2:hover {
+    cursor: pointer;
+}
+
+.photo_item2::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: 0;
+    width: 470px;
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+.photo_item2:hover::before {
+    content: "Ethan Dutton";
+    height: 340px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.photo_item2::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    top: 120px;
+    height: 0;
+    width: 470px;
+}
+
+.photo_item2:hover::after {
+    content: "SENIOR VISUAL DESIGNER";
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+
+/* 第三张图片 */
+.photo_item1_img3:hover {
+    cursor: pointer;
+}
+
+.photo_item3::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 33px;
+    height: 0;
+    width: 470px;
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+.photo_item3:hover::before {
+    content: "Ethan Dutton";
+    height: 340px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.photo_item3::after {
+    content: "";
+    position: absolute;
+    left: 170px;
+    bottom: 250px;
+    height: 0;
+    width: 470px;
+    color: #fff;
+}
+
+.photo_item3:hover::after {
+    content: "SENIOR VISUAL DESIGNER";
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+/* 第四张图片 */
+.photo_item1_img4:hover {
+    cursor: pointer;
+}
+
+.photo_item4::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 33px;
+    height: 0;
+    width: 470px;
+    background-color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+.photo_item4:hover::before {
+    content: "Ethan Dutton";
+    height: 340px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.photo_item4::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    bottom: 250px;
+    height: 0;
+    width: 470px;
+}
+
+.photo_item4:hover::after {
+    content: "SENIOR VISUAL DESIGNER";
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.432);
+}
 
 
 
@@ -338,6 +498,7 @@
     padding-top: 70px;
     text-align: center;
 }
+
 .item7_box1 {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -345,12 +506,14 @@
     margin-right: 125px;
     margin-bottom: 70px;
 }
+
 .item7_box1 h1 {
     font-size: 16px;
     font-weight: 400;
     margin: 45px auto;
     text-align: center;
 }
+
 .item7_box1 input {
     display: block;
     width: 80%;
@@ -360,9 +523,16 @@
     font-size: 14px;
     margin-bottom: 30px;
 }
+
 .item7_box1 textarea {
     display: block;
     width: 80%;
+
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 100px;
+    max-height: 200px;
+
     height: 140px;
     margin: auto;
     padding: 20px 0 0 20px;
@@ -370,6 +540,7 @@
     margin-bottom: 30px;
     color: #7c7575;
 }
+
 .item7_box1 input[type="button"] {
     background-color: #000;
     color: #fff;
@@ -388,22 +559,26 @@
     width: 24%;
     text-align: left;
 }
+
 .item7_box2 h1 {
     font-size: 42px;
     font-weight: 300;
 }
+
 .item7_box2_txt {
     font-size: 16px;
     color: #7c7575;
     margin-top: 35px;
 }
+
 .time {
     display: block;
 }
 
 .item7_box2_info_box {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
+
 .item7_box2_info_box:nth-child(1) {
     margin-top: 65px;
 }
@@ -411,6 +586,7 @@
 .item7_box2_info_box div {
     display: inline-block;
 }
+
 .item7_box2_info_box span {
     margin-left: 15px;
 }
@@ -424,23 +600,28 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .item8_box {
     margin: 85px auto 120px;
     font-size: 16px;
 }
+
 .item8_box a {
     color: #fff;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.301);
     font-weight: 300;
 }
+
 .item8_box a:hover {
     text-decoration: underline;
 }
+
 .item8_box li {
     margin-bottom: 32px;
     list-style-type: none;
 }
+
 .item8_box .now {
     color: #fff;
     font-size: 14px;
