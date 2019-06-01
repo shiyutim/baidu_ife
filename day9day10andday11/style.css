@@ -6,7 +6,7 @@
 /* 第一部分 */
 .item1 {
     height: 1000px;
-    width: 100%;
+    width: 1400px;
     min-width: 100%;
     background-image: url(images/bg1.png);
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 
 /* 第二部分 */
 .item2 {
-    width: 100%;
+    width: 1400px;
     height: 710px;
     background-color: #fff;
 }
