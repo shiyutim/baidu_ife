@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        /* 第一列导航 */
+        .nav1 {
+            width: 100px;
+            height: 100%;
+            background-color: #1d2531;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+        .nav1 > img {
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .nav1 span {
+            position: absolute;
+            bottom: 15px;
+            left: 12px;
+        }
+        .nav1 span img {
+            padding-left: 15px;
+        }
+        /* 左侧第二列导航*/
+        .nav2 {
+            width: 250px;
+            height: 100%;
+            background-color: #222c3c;
+            display: inline-block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        .nav2 .menu {
+            display: inline-block;
+            color: #505b6d;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        <!--左侧第一列导航-->
+        <img src="images/icon_1.png">
+        <img src="images/icon_2.png">
+        <img src="images/icon_3.png">
+        <img src="images/icon_4.png">
+
+        <span>
+            <img src="images/icon_5.png">
+            <img src="images/icon_6.png">
+        </span>
+    </nav>
+    <nav class="nav2">
+        <!--左侧第二列导航-->
+        <span class="menu">
+            MENU
+            <img src="images/icon_6.png">
+        </span>
+    </nav>
+</body>
+</html>
