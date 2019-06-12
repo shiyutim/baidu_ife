@@ -3,51 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <style>
-        html,
-        body {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-        }
-        /* 第一列导航 */
-        .nav1 {
-            width: 100px;
-            height: 100%;
-            background-color: #1d2531;
-            text-align: center;
-            position: relative;
-            display: inline-block;
-        }
-        .nav1 > img {
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .nav1 span {
-            position: absolute;
-            bottom: 15px;
-            left: 12px;
-        }
-        .nav1 span img {
-            padding-left: 15px;
-        }
-        /* 左侧第二列导航*/
-        .nav2 {
-            width: 250px;
-            height: 100%;
-            background-color: #222c3c;
-            display: inline-block;
-            position: absolute;
-            left: 100px;
-            top: 0;
-        }
-        .nav2 .menu {
-            display: inline-block;
-            color: #505b6d;
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1239775_kzplpeyti.css">
+
 </head>
 <body>
     <nav class="nav1">
@@ -62,12 +20,78 @@
             <img src="images/icon_6.png">
         </span>
     </nav>
+    <!--左侧第二列导航-->
     <nav class="nav2">
-        <!--左侧第二列导航-->
-        <span class="menu">
-            MENU
-            <img src="images/icon_6.png">
-        </span>
+        <!-- 第一部分 -->
+        <div class="nav2-item1">
+            <ul>
+                <li>
+                    <span class="menu">
+                        MENU
+                        <img src="images/icon_6.png">
+                    </span>
+                </li>
+                <li>Overview</li>
+                <li>
+                    Sales
+                    <img src="images/icon_7.png" class="sales">
+                </li>
+                <li>Your Staff</li>
+                <li>Analytics & Targeting</li>
+                <li>What's New</li>
+            </ul>
+        </div>
+        <!-- 第二部分 -->
+        <div class="nav2-item2">
+            <ul>
+                <li>
+                    <span class="menu">
+                        YOUR RPODUCTS
+                        <img src="images/icon_6.png">
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <li class="iconfont icon-book"></li>
+                    </span>
+                    Books
+                </li>
+                <li>
+                    <li class="iconfont icon-shexiangtou"></li>    
+                    Tutorials</li>
+                <li>
+                    <li class="iconfont icon-base-img-o"></li>    
+                    Stocks
+                </li>
+                <li>
+                    <li class="iconfont icon-barchart"></li>    
+                    Infographics
+                </li>
+            </ul>
+        </div>
+        <!--第三部分-->
+        <div class="nav2-item3">
+            <ul>
+                <li>
+                    <span class="menu">
+                        DASHBOARD
+                        <img src="images/icon_6.png">
+                    </span>
+                </li>
+                <li>
+                    Messages
+                    <img src="images/icon_8.png">
+                </li>
+                <li>Connections</li>
+                <li>
+                    Integrations
+                    <img src="images/icon_9.png">
+                </li>
+                <li>Account Settings</li>
+                <li>App Settings</li>
+            </ul>
+        </div>
+
     </nav>
 </body>
 </html>

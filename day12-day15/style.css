@@ -1,0 +1,78 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/* 第一列导航 */
+.nav1 {
+    width: 100px;
+    height: 100%;
+    background-color: #1d2531;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.nav1 > img {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nav1 span {
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+}
+.nav1 span img {
+    padding-left: 15px;
+}
+/* 左侧第二列导航*/
+.nav2 {
+    width: 250px;
+    /* height: 100%; */
+    background-color: #222c3c;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.nav2 .menu {
+    display: inline-block;
+    color: #505b6d;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 100%;
+}
+.menu > img {
+    float: right;
+}
+.nav2 ul {
+    color: #b7c0cd;
+    margin: 0;
+    padding: 0;
+}
+.nav2 ul li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.sales {
+    float: right;
+}
+
+.nav2-item1 {
+    border-bottom: 1px solid #2a3547;
+    width: 80%;
+    margin: auto;
+}
+.nav2-item2 {
+    border-bottom: 1px solid #2a3547;
+    width: 80%;
+    margin: auto;
+}
+
+.iconfont {
+    display: inline-block;
+}
