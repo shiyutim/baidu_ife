@@ -34,7 +34,7 @@ body {
 
 .nav1 span {
     position: absolute;
-    bottom: 640px;
+    bottom: 570px;
     left: 12px;
 }
 
@@ -166,6 +166,11 @@ main h1 {
     right: -800px;
     top: 0;
 }
+.info img:nth-child(1) {
+    position: absolute;
+    left: -70px;
+    top: -5px;
+}
 .info span:nth-child(2) {
     color: #2399f1;
 }
@@ -199,11 +204,11 @@ main h1 {
 }
 .bessie {
     position: absolute;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
     padding-left: 27px;
 }
-
 .status {
     background-color: #1bb934;
     width: 5px;
@@ -211,13 +216,132 @@ main h1 {
     display: inline-block;
     border-radius: 50%;
     position: absolute;
-    top: 9px;
+    top: 8px;
+    margin-left: 7px;
+}
+.bessie-info {
+    display: inline-block;
+    margin-left: 350px;
+    position: absolute;
+}
+.bessie-info span:nth-child(2) {
+    margin: 0 20px;
+    color: #999;
+}
+.bessie-info span:nth-child(3) {
+    margin-right: 10px;
+}
+
+
+.chats-item {
+    height: 130px;
+    width: 390px;
+    border: 1px solid #e6e9ec;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.chats-item-top div:nth-child(2) {
+    width: 130px;
+    display: inline-block;
+}
+.distance {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+
+.chats-item-top-name-now {
+    color: #2399f1;
+    font-size: 16px;
+    margin-left: 18px;
+}
+.chats-item-bottom {
+    font-size: 14px;
+}
+.chats-item-bottom img:nth-child(2) {
+    position: absolute;
+    right: 15px;
+    top: 65px;
+}
+.chats-item-bottom-content {
+    display: inline-block;
+    width: 339px;
+    margin-top: 10px;
+}
+.chats-item-top-name {
+    position: relative;
+}
+.chats-status {
+    background-color: #00aaff;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
     margin-left: 7px;
 }
 
 
-.bessie-info {
+
+.content {
+    border: 1px solid #b5b5b5;
+    position: absolute;
+    top: 145px;
+    left: 750px;
+    padding-left: 15px;
+}
+.content-item1 {
+    position: relative;
+    margin-top: 25px;
+}
+.content-item1-bessie {
     display: inline-block;
-    margin-left: 100px;
-    border: 1px solid #ff0000;
+    position: absolute;
+    top: 0;
+    left: 55px;
+}
+.content-item1-message {
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 14px;
+    color: #636872;
+    margin-bottom: 15px;
+}
+.content2 {
+    border: 1px solid #b5b5b5;
+    position: absolute;
+    top: 480px;
+    left: 750px;
+    padding-left: 15px;
+    border-top: none;
+    border-bottom-color: #a7d6f9;
+}
+.content-img {
+    margin-left: 55px;
+    margin-bottom: 15px;
+}
+.content3 {
+    border: 1px solid #b5b5b5;
+    position: absolute;
+    top: 915px;
+    left: 750px;
+    padding-left: 15px;
+    border-top: none;
+}
+.new-message {
+    border: 1px solid #dfe3e9;
+    height: 56px;
+    line-height: 56px;
+    position: relative;
+}
+.new-message div:nth-child(2) {
+    display: inline-block;
+    font-size: 14px;
+    color: #b5b5b5;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 15px;
 }
