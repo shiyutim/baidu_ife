@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p {
+            display: inline-block;
+            color: blue;
+            font-size: 20px;
+            border: 1px solid #ff0000;
+            border-radius: 15px;
+            background-color: pink;
+        }
+        #ipt {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p id="pid">
+                玩家1： tim
+            </p>
+    </div>
+    <!-- <img src="01.png" id="picture"> -->
+    <input type="button" id="ipt" value="add">
+    <script>
+        // var ipt = document.getElementById('ipt');
+        // var img = document.getElementById('picture')
+        // var pid = document.getElementById('pid');
+        const pid = document.querySelector('p');
+        pid.addEventListener('click', updateName);
+        function updateName() {
+            let name = prompt('输入新的名字');
+            pid.textContent = "玩家2：" + name;
+        }
+
+
+
+        const btn = document.querySelector('input');
+        btn.addEventListener('click', addName);
+        function addName() {
+            let name = prompt('新玩家');
+            let para = document.createElement('p');
+            let index = 1;
+            index++;
+            var text = document.createTextNode("玩家" + index + "：" + name)
+            para.appendChild(text);
+            let cont = document.getElementById('container')
+            cont.appendChild(para);
+        }
+    </script>
+</body>
+</html>
