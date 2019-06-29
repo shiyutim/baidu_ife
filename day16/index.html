@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style>
-        p {
-            display: inline-block;
-            color: blue;
-            font-size: 20px;
-            border: 1px solid #ff0000;
-            border-radius: 15px;
-            background-color: pink;
-        }
-        #ipt {
-            display: block;
-        }
-    </style>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
 </head>
-<body>
-    <div id="container">
-        <p id="pid">
-                玩家1： tim
-            </p>
-    </div>
-    <!-- <img src="01.png" id="picture"> -->
-    <input type="button" id="ipt" value="add">
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
     <script>
-        // var ipt = document.getElementById('ipt');
-        // var img = document.getElementById('picture')
-        // var pid = document.getElementById('pid');
-        const pid = document.querySelector('p');
-        pid.addEventListener('click', updateName);
-        function updateName() {
-            let name = prompt('输入新的名字');
-            pid.textContent = "玩家2：" + name;
+        let add = document.getElementById('add-btn');
+        let minus = document.getElementById('minus-btn');
+        let times = document.getElementById('times-btn');
+        let divide = document.getElementById('divide-btn');
+        add.onclick = function() {
+            var value1 = document.getElementById('first-number').value;
+            var value2 = document.getElementById('second-number').value;
+            var result = document.getElementById('result');
+            result.innerHTML = parseFloat(value1) + parseFloat(value2);
         }
-
-
-
-        const btn = document.querySelector('input');
-        btn.addEventListener('click', addName);
-        function addName() {
-            let name = prompt('新玩家');
-            let para = document.createElement('p');
-            let index = 1;
-            index++;
-            var text = document.createTextNode("玩家" + index + "：" + name)
-            para.appendChild(text);
-            let cont = document.getElementById('container')
-            cont.appendChild(para);
+        minus.onclick = function() {
+            var value1 = document.getElementById('first-number').value;
+            var value2 = document.getElementById('second-number').value;
+            var result = document.getElementById('result');
+            result.innerHTML = parseFloat(value1) - parseFloat(value2); 
+        }
+        times.onclick = function() {
+            var value1 = document.getElementById('first-number').value;
+            var value2 = document.getElementById('second-number').value;
+            var result = document.getElementById('result');
+            result.innerHTML = parseFloat(value1) * parseFloat(value2);
+        }
+        divide.onclick = function() {
+            var value1 = document.getElementById('first-number').value;
+            var value2 = document.getElementById('second-number').value;
+            var result = document.getElementById('result');
+            result.innerHTML = parseFloat(value1) / parseFloat(value2);
         }
     </script>
 </body>

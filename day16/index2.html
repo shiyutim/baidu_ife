@@ -34,6 +34,16 @@
         p strong {
             font-weight: 600;
         }
+
+        input[type="button"] {
+            background-color: #d35400;
+            width: 120px;
+            height: 30px;
+            border: 1px solid #e74c3c;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
     </style>
 </head>
 <body>
@@ -58,5 +68,17 @@
             <span>项目A：项目时间：2019.05，项目描述：在项目A中负责了页面的编写</span>
         </p>
     </section>
+    <section>
+        <input type="button" value="welcome">
+    </section>
+
+    <script>
+        let ipt = document.querySelector('input');
+        ipt.addEventListener('click', createName);
+        function createName() {
+            let name = prompt("请输入您的名字~");
+            alert("客官来玩呀：" + name + "~")
+        }
+    </script>
 </body>
 </html>
