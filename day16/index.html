@@ -21,25 +21,25 @@
             var value1 = document.getElementById('first-number').value;
             var value2 = document.getElementById('second-number').value;
             var result = document.getElementById('result');
-            result.innerHTML = parseFloat(value1) + parseFloat(value2);
+            result.innerHTML = "运算结果: " + Number(Number(value1) + Number(value2));
         }
         minus.onclick = function() {
             var value1 = document.getElementById('first-number').value;
             var value2 = document.getElementById('second-number').value;
             var result = document.getElementById('result');
-            result.innerHTML = parseFloat(value1) - parseFloat(value2); 
+            result.innerHTML = "运算结果：" + Number(Number(value1) - Number(value2)); 
         }
         times.onclick = function() {
             var value1 = document.getElementById('first-number').value;
             var value2 = document.getElementById('second-number').value;
             var result = document.getElementById('result');
-            result.innerHTML = parseFloat(value1) * parseFloat(value2);
+            result.innerHTML = "运算结果：" + Number(Number(value1) * Number(value2)); 
         }
         divide.onclick = function() {
             var value1 = document.getElementById('first-number').value;
             var value2 = document.getElementById('second-number').value;
             var result = document.getElementById('result');
-            result.innerHTML = parseFloat(value1) / parseFloat(value2);
+            result.innerHTML = "运算结果：" + Number(Number(value1) / Number(value2)); 
         }
     </script>
 </body>

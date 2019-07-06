@@ -23,3 +23,9 @@
 ## day9 day10 and day11 做一个网站
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day9day10andday11/index.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day9day10andday11)
+## day12-day15 做一个复杂页面
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day12-day15/index.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day12-day15)
+## day16 认识JS
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day16/index2.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day16)
