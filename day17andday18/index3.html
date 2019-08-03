@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+
+    <script>
+        let ipt = document.querySelector("#dec-number");
+        let btn = document.querySelector("#trans-btn");
+        let result = document.querySelector("#result");
+        let binBit = document.querySelector("#bin-bit");
+        function dec2bin(decNumber) {
+            // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+            if(decNumber > 0 && decNumber % 1 == 0) {
+                let str = parseInt(decNumber);
+                return str.toString(2)
+            }else if (decNumber == '') {
+                console.log("请输入内容")              
+            }else {
+                console.log("请输入数字")
+            }
+        };
+
+        // 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+        // Some coding
+        btn.onclick = function() {
+            let numValue = dec2bin(ipt.value);    //二进制的数字
+            let numLength = numValue.length;   //二进制数字的长度
+            //数字为 input.value
+
+            if(dec2bin(ipt.value) == undefined) {
+                return false
+            }else {
+                result.innerHTML = dec2bin(ipt.value)
+            }
+        }
+
+
+            binBit.onkeyup = function() {
+                let binBitValue = binBit.value        // 第二个输入框中的值
+                let numValue = dec2bin(ipt.value);    //二进制的数字
+                let numLength = numValue.length;
+
+                let resLength = binBitValue - numLength;
+                let item = []
+                for(var i=0;i<resLength;i++) {
+                    item += 0
+                }
+                if(binBitValue  <= numLength) {
+                    console.log("数字不够长哦~")
+                    result.innerHTML = item + numValue
+                }else {
+                    result.innerHTML = item + numValue
+                }
+            }
+
+
+
+
+
+            
+    </script>
+</body>
+</html>

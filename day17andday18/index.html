@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style>
-    </style>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
 </head>
-<body>
-    <script>  
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        let ipt1 = document.querySelector("#first-number");
+        let ipt2 = document.querySelector("#second-number");
+        let addBtn = document.querySelector("#add-btn");
+        let minusBtn = document.querySelector("#minus-btn");
+        let timesBtn = document.querySelector("#times-btn");
+        let divideBtn = document.querySelector("#divide-btn");
+        let result = document.querySelector("#result")
+        // add
+        addBtn.onclick = function() {
+            // console.log(123)
+            if(typeof parseInt(ipt1.value, 10) == 'number' || typeof parseInt(ipt2.value, 10) == 'number' ) {
+                result.innerHTML = parseInt(ipt1.value, 10) + parseInt(ipt2.value, 10);
+            }else {
+                console.log("请输入数字哦！")
+            }
+        }
+        // minus
+        minusBtn.onclick = function() {
+            if(typeof parseInt(ipt1.value, 10) == 'number' || typeof parseInt(ipt2.value, 10) == 'number' ) {
+                result.innerHTML = parseInt(ipt1.value, 10) - parseInt(ipt2.value, 10);
+            }else {
+                console.log("请输入数字哦！")
+            }
+        }
+        // times
+        timesBtn.onclick = function() {
+            if(typeof parseInt(ipt1.value, 10) == 'number' || typeof parseInt(ipt2.value, 10) == 'number' ) {
+                result.innerHTML = parseInt(ipt1.value, 10) * parseInt(ipt2.value, 10);
+            }else {
+                console.log("请输入数字哦！")
+            }
+        }
+        // divide
+        divideBtn.onclick = function() {
+            if(ipt2.value == 0) {
+                console.log("除数不能为0，请从新输入！")
+            }else {
+                if(typeof parseInt(ipt1.value, 10) == 'number' || typeof parseInt(ipt2.value, 10) == 'number' ) {
+                result.innerHTML = parseInt(ipt1.value, 10) / parseInt(ipt2.value, 10);
+                }else {
+                    console.log("请输入数字哦！")
+                }
+            }
+        }
     </script>
 </body>
 </html>

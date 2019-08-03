@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3或3的倍数 全部替换成 PA
+        for(var i=0;i<101;i++) {
+            let item = []
+            let str = 'PA';
+            let reg = /3\d|\d3/;
+
+            item += i + ',';
+
+            if(i%3 == 0 && i !=0) {
+                item = item.replace(i, str)
+            }
+            item = item.replace(reg, str)
+            console.log(item)
+        }
+
+        
+    </script>
+</body>
+</html>
