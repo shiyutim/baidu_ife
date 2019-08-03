@@ -26,88 +26,23 @@
         border-bottom: 1px solid #dbdbdb;
         padding-bottom: 5px;
     }
-    span {
-        margin-right: 40px;
-    }
 </style>
 <body>
-
-    <table>
-        <tr>
-            <th id="tb1"></th>
-        </tr>
-        <tr>
-            <th id="tb2"></th>
-        </tr>
-        <tr>
-            <th id="tb3"></th>
-        </tr>
-        <tr>
-            <th id="tb4"></th>
-        </tr>
-        <tr>
-            <th id="tb5"></th>
-        </tr>
-        <tr>
-            <th id="tb6"></th>
-        </tr>
-        <tr>
-            <th id="tb7"></th>
-        </tr>
-        <tr>
-            <th id="tb8"></th>
-        </tr>
-        <tr>
-            <th id="tb9"></th>
-        </tr>
-
-    </table>
+    <table></table>
 
     <script>
+        let table = document.querySelector("table")
         let tb1 = document.querySelector("#tb1")
-        let n = 9;
-        let m = 9;
-        let p;
-        for (let i = 1; i < n + 1; i++) {
-            for (let j = 1; j < m + 1; j++) {
-                console.log(i + 'x' + j + '=' + j * i)
-                if(i == 1) {
-                    tb1.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 2) {
-                    tb2.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 3) {
-                    tb3.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 4) {
-                    tb4.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 5) {
-                    tb5.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 6) {
-                    tb6.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 7) {
-                    tb7.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 8) {
-                    tb8.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }else if(i == 9) {
-                    tb9.innerHTML += (
-                    '<span>' + i + 'x' + j + '=' + j * i + '</span>'
-                    )
-                }
+
+        for (let i = 1; i < 10 + 1; i++) {
+            var tr = document.createElement('tr');
+            table.appendChild(tr);
+            for (let j = 1; j <= i; j++) {
+                var str = j + 'x' + j + '=' + j*i
+                var td = document.createElement('td');
+                td.innerHTML = str;
+                tr.appendChild(td)
+                console.log(str)
             }
         }
     </script>

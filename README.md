@@ -29,3 +29,6 @@
 ## day16 认识JS
 * [代码](https://github.com/shiyutim/baidu_ife/blob/master/day16/index2.html)
 * [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day16)
+## day17 练习JavaScript
+* [代码](https://github.com/shiyutim/baidu_ife/blob/master/day17andday18/index.html)
+* [笔记](https://github.com/shiyutim/baidu_ife/tree/master/day17andday18)
